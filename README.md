@@ -32,7 +32,8 @@ This repository contains an end-to-end Data Engineering project demonstrating a 
 4. **Cloud Security:** Deployed custom IAM roles adhering strictly to the principle of least privilege, restricting Superset's access exclusively to the necessary S3 buckets and Athena workgroups.
 
 ## Dashboard Preview
-*(Add your final Apache Superset dashboard screenshot here)*
+<img width="1904" height="956" alt="Apache" src="https://github.com/user-attachments/assets/baab2703-74fd-4c18-a036-fbfcedb31c66" />
+
 ![Superset Dashboard](images/dashboard_preview.png)
 
 ## Author
