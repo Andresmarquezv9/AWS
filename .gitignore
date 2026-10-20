@@ -1,0 +1,27 @@
+# Variables de entorno y credenciales (CRÍTICO)
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+aws_credentials.csv
+
+# Python y AWS Lambda
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Archivos ocultos de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs y bases de datos locales
+*.log
+superset.db

@@ -1,0 +1,61 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AthenaQueryExecution",
+            "Effect": "Allow",
+            "Action": [
+                "athena:StartQueryExecution",
+                "athena:GetQueryExecution",
+                "athena:GetQueryResults",
+                "athena:StopQueryExecution",
+                "athena:GetWorkGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "GlueCatalogReadAccess",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:GetDatabases",
+                "glue:GetTable",
+                "glue:GetTables",
+                "glue:GetPartition",
+                "glue:GetPartitions"
+            ],
+            "Resource": [
+                "arn:aws:glue:*:*:catalog",
+                "arn:aws:glue:*:*:database/gold_purchases_db",
+                "arn:aws:glue:*:*:table/gold_purchases_db/*"
+            ]
+        },
+        {
+            "Sid": "S3DataLakeReadAccess",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::etl-compras-portfolio",
+                "arn:aws:s3:::etl-compras-portfolio/gold/*",
+                "arn:aws:s3:::etl-compras-portfolio/silver/*",
+                "arn:aws:s3:::etl-compras-portfolio/bronze/*"
+            ]
+        },
+        {
+            "Sid": "S3AthenaQueryResultsWrite",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:ListMultipartUploadParts",
+                "s3:AbortMultipartUpload"
+            ],
+            "Resource": [
+                "arn:aws:s3:::etl-compras-portfolio/athena-querys/*"
+            ]
+        }
+    ]
+}
