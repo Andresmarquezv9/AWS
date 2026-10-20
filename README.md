@@ -13,7 +13,7 @@ This repository contains an end-to-end Data Engineering project demonstrating a 
 
 ## Repository Structure
 
-\`\`\`text
+\\\text
 .
 ├── docker/             # Contains requirements-local.txt to inject PyAthena dependencies into the Superset container.
 ├── IAM Policy/         # Contains iam_superset_policy.json demonstrating strict read/write access control.
@@ -22,7 +22,9 @@ This repository contains an end-to-end Data Engineering project demonstrating a 
 ├── src/                # Python scripts used for the AWS Lambda ETL processes.
 ├── .gitignore          # Rules to prevent the upload of sensitive credentials and environment variables.
 └── README.md           # Project documentation.
-\`\`\`
+\\\
+
+
 ## Key Features & Implementations
 
 1. **Automated Data Processing:** AWS Lambda functions automatically trigger and transform raw Excel/CSV data into optimized Parquet files, moving them sequentially through the Bronze, Silver, and Gold layers in S3.
