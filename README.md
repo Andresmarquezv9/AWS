@@ -13,12 +13,12 @@ This repository contains an end-to-end Data Engineering project demonstrating a 
 
 ## Repository Structure
 
-\`\`\`text
+```text
 .
-├── docker/             # Contains `requirements-local.txt` to inject PyAthena dependencies into the Superset container.
-├── IAM Policy/         # Contains `iam_superset_policy.json` demonstrating strict read/write access control.
+├── docker/             # Contains requirements-local.txt to inject PyAthena dependencies into the Superset container.
+├── IAM Policy/         # Contains iam_superset_policy.json demonstrating strict read/write access control.
 ├── images/             # Architecture diagrams and dashboard screenshots.
-├── sql/                # SQL queries for dimensional modeling and Athena dataset creation (e.g., `modelo_gold.sql`).
+├── sql/                # SQL queries for dimensional modeling and Athena dataset creation (e.g., modelo_gold.sql).
 ├── src/                # Python scripts used for the AWS Lambda ETL processes.
 ├── .gitignore          # Rules to prevent the upload of sensitive credentials and environment variables.
 └── README.md           # Project documentation.
