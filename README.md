@@ -22,8 +22,7 @@ This repository contains an end-to-end Data Engineering project demonstrating a 
 ├── src/                # Python scripts used for the AWS Lambda ETL processes.
 ├── .gitignore          # Rules to prevent the upload of sensitive credentials and environment variables.
 └── README.md           # Project documentation.
-\`\`\`
-
+```text
 ## Key Features & Implementations
 
 1. **Automated Data Processing:** AWS Lambda functions automatically trigger and transform raw Excel/CSV data into optimized Parquet files, moving them sequentially through the Bronze, Silver, and Gold layers in S3.
